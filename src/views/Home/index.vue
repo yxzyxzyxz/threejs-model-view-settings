@@ -121,13 +121,18 @@ export default {
         this.loadFbxModel()
       }
     },
-    getMessage({ configs }) {
-      if (configs) {
-        this.controlsConfig = {
-          x: configs.x || 4,
-          y: configs.y || 4,
-          z: configs.z || 4,
-          isAnimationPlay: configs.isAnimationPlay || true,
+    getMessage({ data }) {
+      if (data) {
+        if (data.configs) {
+          this.controlsConfig = {
+            x: data.configs.x || 4,
+            y: data.configs.y || 4,
+            z: data.configs.z || 4,
+            isAnimationPlay:
+              data.configs.isAnimationPlay !== null
+                ? data.configs.isAnimationPlay
+                : true,
+          }
         }
       }
     },
