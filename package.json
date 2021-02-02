@@ -1,0 +1,35 @@
+{
+  "name": "interact_element",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "ant-design-vue": "^1.6.2",
+    "axios": "^0.20.0",
+    "core-js": "^3.6.4",
+    "lodash": "^4.17.19",
+    "qrcode": "^1.4.4",
+    "three": "^0.120.1",
+    "three-orbit-controls": "^82.1.0",
+    "tinycolor2": "^1.4.1",
+    "v-charts": "^1.19.0",
+    "v-click-outside": "^3.0.1",
+    "vue": "^2.6.11",
+    "vue-router": "^3.1.5"
+  },
+  "devDependencies": {
+    "@vue/cli-service": "^4.2.0",
+    "less": "^3.10.3",
+    "less-loader": "^5.0.0",
+    "sass": "^1.25.0",
+    "sass-loader": "^8.0.2",
+    "stylelint": "^13.6.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-webpack-plugin": "^2.0.0",
+    "vue-template-compiler": "^2.6.11"
+  }
+}

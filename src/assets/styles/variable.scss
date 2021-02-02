@@ -1,0 +1,19 @@
+$themeColor: #e86b99;
+$borderRadius: 4px;
+
+// 单行文字行末省略
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 多行文字尾行行末省略
+@mixin multi-ellipsis($line: 2) {
+  word-wrap: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
