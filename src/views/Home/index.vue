@@ -63,8 +63,12 @@ export default {
   beforeMount() {},
   async mounted() {
     window.addEventListener('message', this.getMessage)
+    
     this.modelId = this.$route.params.id
     await api.resourcelib.getResourcelib(this.modelId).then((res) => {
+      if(res.config){
+        this.config=JSON.parse(res.config)
+      }
       res.path = `https://file.lessonplan.cn/` + res.path
       res.mtlPath = `https://file.lessonplan.cn/` + res.mtlPath
       this.model = res
